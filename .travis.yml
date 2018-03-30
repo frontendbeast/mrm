@@ -1,0 +1,23 @@
+language: ruby
+rvm:
+ - 2.3
+addons:
+  apt:
+    sources: ubuntu-toolchain-r-test
+    packages: g++-4.8
+install:
+- bundle install
+- CONTENTFUL_ACCESS_TOKEN=$CONTENTFUL_ACCESS_TOKEN CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID bundle exec jekyll contentful
+- bundle exec jekyll build
+branches:
+  only:
+    - master
+    - develop
+after_success:
+- git remote add deploy ssh://$VPS_USER@$VPS_IP_ADDRESS$VPS_PATH
+- git push deploy $TRAVIS_BRANCH
+before_install:
+- echo -e "Host $VPS_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- openssl aes-256-cbc -K $encrypted_81ee9e5e0778_key -iv $encrypted_81ee9e5e0778_iv
+  -in travis.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
