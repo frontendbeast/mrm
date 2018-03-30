@@ -1,0 +1,19 @@
+{
+  "name": "mrm.group",
+  "version": "0.0.1",
+  "description": "MRM Weekend site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendbeast/mrm.group.git"
+  },
+  "author": "Darren Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontendbeast/mrm.group/issues"
+  },
+  "homepage": "https://github.com/frontendbeast/mrm.group#readme"
+}
