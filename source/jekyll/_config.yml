@@ -17,6 +17,7 @@ contentful:
     - mrm:
         space: ENV_CONTENTFUL_SPACE_ID
         access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        base_path: ./source/jekyll
 
 # Contentful page generation settings
 page_gen-dirs: false
