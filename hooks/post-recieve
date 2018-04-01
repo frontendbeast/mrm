@@ -49,7 +49,7 @@ do
     bundle install --path vendor/bundle
 
     # Get data from Contentful
-    CONTENTFUL_ACCESS_TOKEN=XXX CONTENTFUL_SPACE_ID=XXX bundle exec jekyll contentful
+    CONTENTFUL_ACCESS_TOKEN=XXX CONTENTFUL_SPACE_ID=XXX bundle exec jekyll contentful --config source/jekyll/_config.yml
 
     # Install node modules
     npm install
