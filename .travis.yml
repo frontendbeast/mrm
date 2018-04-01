@@ -5,7 +5,7 @@ addons:
     packages: g++-4.8
 install:
 - bundle install
-- CONTENTFUL_ACCESS_TOKEN=$CONTENTFUL_ACCESS_TOKEN CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID bundle exec jekyll contentful
+- CONTENTFUL_ACCESS_TOKEN=$CONTENTFUL_ACCESS_TOKEN CONTENTFUL_SPACE_ID=$CONTENTFUL_SPACE_ID bundle exec jekyll contentful --config source/jekyll/_config.yml
 - bundle exec jekyll build
 script:
 branches:
