@@ -1,11 +1,11 @@
 a:not([class]) {
-	border-bottom: 1px solid #000;
-	color: #000;
+	border-bottom: 1px solid get-color(body-copy);
+	color: get-color(body-copy);
 	text-decoration: none;
 	transition: border-bottom-color 0.25s, color 0.25s;
 
 	&:hover {
-		border-bottom-color: #0cf;
-		color: #0cf;
+		border-bottom-color: get-color(link-hover);
+		color: get-color(link-hover);
 	}
 }

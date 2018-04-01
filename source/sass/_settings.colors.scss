@@ -1,0 +1,20 @@
+// sass-lint:disable no-color-keywords indentation
+
+$c-palette: (
+	primary: (
+    black: #000,
+    white: #fff,
+    yellow: #fd0,
+	)
+);
+
+$c-tints: (
+  primary: ()
+);
+
+$c-uses: (
+	body-bg:                get-color-direct(primary, black),
+  body-copy:              get-color-direct(primary, white),
+
+  link-hover:             get-color-direct(primary, yellow),
+);

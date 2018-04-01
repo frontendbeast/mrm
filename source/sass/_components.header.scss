@@ -1,0 +1,12 @@
+.c-header {
+  height: 3.75em;
+}
+
+  .c-header__logo {
+    height: 1.25em;
+    padding: get-size(gutter);
+  }
+
+  .c-header__svg {
+    max-height: 100%;
+  }

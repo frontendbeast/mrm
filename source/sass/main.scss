@@ -1,7 +1,15 @@
+@import 'tools.colors';
+@import 'tools.functions';
+
+@import 'settings.colors';
+@import 'settings.dimensions';
+
 @import 'elements.links';
 @import 'elements.page';
 
 @import 'objects.grid';
 @import 'objects.wrapper';
+
+@import 'components.header';
 
 @import 'utilities.helpers';

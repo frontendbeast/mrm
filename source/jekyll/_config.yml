@@ -23,12 +23,12 @@ page_gen-dirs: false
 
 page_gen:
   - data: contentful.spaces.mrm.page
-    template: page
+    template: default
     name: title
     dir: './'
     filter_condition: "!record['app_screen']"
 
   - data: contentful.spaces.mrm.event
-    template: page
+    template: default
     name: name
     dir: events
