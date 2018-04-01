@@ -51,13 +51,17 @@ do
     # Get data from Contentful
     CONTENTFUL_ACCESS_TOKEN=XXX CONTENTFUL_SPACE_ID=XXX bundle exec jekyll contentful
 
+    # Install node modules
+    npm install
+
 	  # Build front end
-    bundle exec jekyll build
+    bundle exec jekyll build --config source/jekyll/_config.yml
+    gulp --prod
 
     # Remove all but last 5 releases
     ls -trd $WWW_RELEASES/* | head -n -5 | xargs rm -rf
 
     # Symlink new release as current
-    ln -sfn $WWW_RELEASE/_site $WWW_CURRENT
+    ln -sfn $WWW_RELEASE/public $WWW_CURRENT
 
 done

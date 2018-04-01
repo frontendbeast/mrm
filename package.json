@@ -1,6 +1,6 @@
 {
   "name": "mrm.group",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "MRM Weekend site",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/frontendbeast/mrm.group/issues"
   },
-  "homepage": "https://github.com/frontendbeast/mrm.group#readme"
+  "homepage": "https://github.com/frontendbeast/mrm.group#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^3.2.1",
+    "husky": "^0.14.3",
+    "run-sequence": "^2.2.1",
+    "validate-commit-msg": "^2.14.0",
+    "yargs": "^11.0.0"
+  }
 }
