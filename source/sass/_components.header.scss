@@ -1,10 +1,17 @@
 .c-header {
-  height: 3.75em;
+  align-items: center;
+  display: flex;
+  height: 60px;
 }
 
   .c-header__logo {
+    flex: 1;
     height: 1.25em;
     padding: get-size(gutter);
+  }
+
+  .c-header__spacer {
+    width: (get-size(gutter) * 2) + get-size(nav-btn-width)
   }
 
   .c-header__svg {
