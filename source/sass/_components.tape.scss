@@ -1,0 +1,16 @@
+.c-tape {
+  background-color: get-color(tape-bg);
+  color: get-color(tape-copy);
+  display: inline-block;
+  font-family: 'bebas-neue';
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  padding: 0 7px;
+}
+
+.c-tape--feature {
+  background-color: get-color(tape-feature-bg);
+  font-size: 40px;
+  letter-spacing: 0.25px;
+  padding: 0 15px;
+}

@@ -17,4 +17,8 @@ $c-uses: (
   body-copy:              get-color-direct(primary, white),
 
   link-hover:             get-color-direct(primary, yellow),
+
+  tape-bg:                get-color-direct(primary, white),
+  tape-copy:              get-color-direct(primary, black),
+  tape-feature-bg:        get-color-direct(primary, yellow),
 );

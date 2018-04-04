@@ -1,9 +1,32 @@
-$d-gutter: 1rem;
-
 .o-grid {
-	display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-	.o-grid__item {
-		flex: 1;
-	}
+  .o-grid__content {
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding: get-size(gutter);
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .o-grid__feature & {
+      align-items: flex-end;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .o-grid__item {
+    display: block;
+    padding-top: 75%;
+    position: relative;
+  }
+
+  .o-grid__feature {
+    grid-column: span 2;
+  }
