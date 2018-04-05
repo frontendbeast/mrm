@@ -1,11 +1,13 @@
 html {
-	font-size: 1rem;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1.125rem;
 }
 
 body {
   background-color: get-color(body-bg);
   color: get-color(body-copy);
-	font-family: 'Zilla Slab', serif;
-	line-height: 1.5;
-	margin: 0;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }

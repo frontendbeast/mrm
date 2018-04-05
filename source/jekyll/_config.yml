@@ -24,7 +24,7 @@ page_gen-dirs: false
 
 page_gen:
   - data: contentful.spaces.mrm.page
-    template: default
+    template: page
     name: title
     dir: './'
     filter_condition: "!record['app_screen']"

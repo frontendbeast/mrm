@@ -1,0 +1,33 @@
+.c-image-aspect {
+  display: block;
+  padding-top: 75%;
+  position: relative;
+}
+
+  .c-image-aspect--page {
+    padding-top: 112.5%;
+  }
+
+  .c-image-aspect__content {
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding: get-size(gutter);
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .c-image-aspect__content--center-bottom {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-image-aspect__content--center-top {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }

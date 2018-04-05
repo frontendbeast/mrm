@@ -5,8 +5,12 @@ layout: default
 <div class="o-grid">
   {% for item in site.data.contentful.spaces.mrm.settings[0].home_grid %}
     <div{% if forloop.first %} class="o-grid__feature"{% endif %}>
-      <a href="{{ item.title | datapage_url: '' }}" class="o-grid__item">
-        <div class="o-grid__content" style="background-image: url({{ item.image.url }}?fm=jpg&amp;q=50&w={% if forloop.first %}900{% else %}450{% endif %})">
+      <a href="{{ item.title | datapage_url: '' }}" class="c-image-aspect">
+        {% assign width = 450 %}
+        {% if forloop.first %}
+          {% assign width = 900 %}
+        {% endif %}
+        <div class="c-image-aspect__content{% if forloop.first %} c-image-aspect__content--center-bottom{% endif %}" style="background-image: url({{ item.image.url | cf_image_url: width }})">
           <span class="c-tape{% if forloop.first %} c-tape--feature{% endif %}">{{ item.title }}</span>
         </div>
       </a>

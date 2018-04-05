@@ -1,0 +1,7 @@
+.c-markdown {
+  img {
+    margin-left: -#{get-size(gutter)};
+    margin-right: -#{get-size(gutter)};
+    width: calc(100% + #{(get-size(gutter) * 2)}) ;
+  }
+}

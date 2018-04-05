@@ -4,6 +4,7 @@
 @import 'settings.colors';
 @import 'settings.dimensions';
 
+@import 'elements.blockquote';
 @import 'elements.links';
 @import 'elements.page';
 
@@ -11,6 +12,8 @@
 @import 'objects.wrapper';
 
 @import 'components.header';
+@import 'components.image-aspect';
+@import 'components.markdown';
 @import 'components.nav';
 @import 'components.tape';
 
