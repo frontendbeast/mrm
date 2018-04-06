@@ -15,7 +15,8 @@ layout: default
           <div class="c-event__tape">
             <div class="c-heading c-heading--h2 c-tape">{{ event.name }}</div>
           </div>
-          <div class="c-heading c-heading--h3 c-tape c-tape--alt">{{ event.date | date: '%l%P' }} @ {{ event.venue.name }}</div>
+          {% capture minutes %}{{ event.date | date: '%M' }}{% endcapture %}
+          <div class="c-heading c-heading--h3 c-tape c-tape--alt">{% if minutes != "00" %}{{ event.date | date: '%l:%M%P' }}{% else %}{{ event.date | date: '%l%P' }}{% endif %} @ {{ event.venue.name }}</div>
         </div>
       </div>
     </a>
