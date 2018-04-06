@@ -9,8 +9,9 @@
 }
 
   .c-header__logo {
+    display: flex;
     flex: 1;
-    height: 1.25em;
+    justify-content: center;
     padding: get-size(gutter);
   }
 
@@ -19,5 +20,5 @@
   }
 
   .c-header__svg {
-    max-height: 100%;
+    height: 20px;
   }
