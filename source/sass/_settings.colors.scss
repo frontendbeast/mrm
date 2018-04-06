@@ -2,9 +2,12 @@
 
 $c-palette: (
 	primary: (
+    grey-medium: #404040,
+    grey-dark: #222,
     black: #000,
     white: #fff,
     yellow: #fd0,
+    red: #c71e21,
 	)
 );
 
@@ -16,9 +19,18 @@ $c-uses: (
 	body-bg:                get-color-direct(primary, black),
   body-copy:              get-color-direct(primary, white),
 
+  event-list-day:         get-color-direct(primary, grey-dark),
+
+  image-aspect-bg:        get-color-direct(primary, grey-medium),
+  image-aspect-border:    get-color-direct(primary, black),
+
   link-hover:             get-color-direct(primary, yellow),
 
   tape-bg:                get-color-direct(primary, white),
   tape-copy:              get-color-direct(primary, black),
+  tape-entry-bg:          get-color-direct(primary, red),
+  tape-entry-copy:        get-color-direct(primary, white),
   tape-feature-bg:        get-color-direct(primary, yellow),
+  tape-secondary-bg:      get-color-direct(primary, black),
+  tape-secondary-copy:    get-color-direct(primary, white),
 );

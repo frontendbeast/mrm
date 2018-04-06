@@ -4,13 +4,13 @@ layout: default
 {% if page.image %}
   <div class="c-image-aspect c-image-aspect--page">
     <div class="c-image-aspect__content c-image-aspect__content--center-top" style="background-image: url({{ page.image.url | cf_image_url: 900 }})">
-        <span class="c-tape c-tape--feature">{{ page.title }}</span>
+        <span class="c-tape c-tape--feature c-heading c-heading--h1">{{ page.title }}</span>
     </div>
   </div>
 {% endif %}
 <div class="o-wrapper c-markdown">
   {% if page.image == nil %}
-  <span class="c-tape c-tape--feature">{{ page.title }}</span>
+  <span class="c-heading c-heading--h1">{{ page.title }}</span>
   {% endif %}
   {{ page.copy | cf_image_filter | markdownify }}
 </div>

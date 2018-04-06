@@ -11,7 +11,7 @@ layout: default
           {% assign width = 900 %}
         {% endif %}
         <div class="c-image-aspect__content{% if forloop.first %} c-image-aspect__content--center-bottom{% endif %}" style="background-image: url({{ item.image.url | cf_image_url: width }})">
-          <span class="c-tape{% if forloop.first %} c-tape--feature{% endif %}">{{ item.title }}</span>
+          <span class="c-heading c-tape{% if forloop.first %} c-tape--feature c-heading--h1{% else %} c-heading--h2{% endif %}">{{ item.title }}</span>
         </div>
       </a>
     </div>

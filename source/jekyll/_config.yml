@@ -30,6 +30,6 @@ page_gen:
     filter_condition: "!record['app_screen']"
 
   - data: contentful.spaces.mrm.event
-    template: default
+    template: event
     name: name
     dir: events
