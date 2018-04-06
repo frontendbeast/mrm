@@ -1,7 +1,11 @@
 .c-header {
   align-items: center;
+  background-color: get-color(header-bg);
   display: flex;
   height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
   .c-header__logo {

@@ -21,10 +21,14 @@ $c-uses: (
 
   event-list-day:         get-color-direct(primary, grey-dark),
 
+  header-bg:              get-color-direct(primary, black),
+
   image-aspect-bg:        get-color-direct(primary, grey-medium),
   image-aspect-border:    get-color-direct(primary, black),
 
   link-hover:             get-color-direct(primary, yellow),
+
+  nav-btn-line:           get-color-direct(primary, white),
 
   tape-bg:                get-color-direct(primary, white),
   tape-copy:              get-color-direct(primary, black),

@@ -4,9 +4,31 @@
   }
 
   &.is-visible {
+    background-color: rgba(0,0,0,0.8);
     display: block;
+    height: 100%;
+    padding-top: get-size(logo-height) + (get-size(gutter) * 2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
 }
+
+  .c-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: get-size(gutter);
+    text-align: center;
+  }
+
+  .c-nav__list-item {
+    margin-bottom: get-size(gutter);
+  }
+
+  .c-nav__list-link {
+    text-decoration: none;
+  }
 
 .c-nav-btn {
   background: none;
@@ -14,6 +36,24 @@
   display: flex;
   padding: get-size(gutter);
 }
+
+  .c-nav-btn__back {
+    height: get-size(nav-btn-height);
+    position: relative;
+    width: get-size(nav-btn-width);
+  }
+
+  .c-nav-btn__chevron {
+    border-color: get-color(nav-btn-line);
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    display: inline-block;
+    height: 16px;
+    left: 6px;
+    position: relative;
+    transform: rotate(-135deg);
+    width: 16px;
+  }
 
   .c-nav-btn__hamburger {
     height: get-size(nav-btn-height);
@@ -29,7 +69,7 @@
     transition-duration: 75ms;
 
     &, &::after, &::before {
-      background-color: #fff;
+      background-color: get-color(nav-btn-line);
       content: ' ';
       display: inline-block;
       height: 2px;
