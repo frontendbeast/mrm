@@ -4,13 +4,14 @@ function getPaths(config) {
   var path = require('path');
 
   var dirs = {
-    "dest": "public",
     "css": "styles",
+    "dest": "public",
+    "fonts": "fonts",
+    "jekyll": "jekyll",
     "root": "./",
     "sass": "sass",
     "scripts": "scripts",
     "src": "source",
-    "jekyll": "jekyll",
     "tasks": "gulp_tasks"
   };
 
@@ -24,18 +25,16 @@ function getPaths(config) {
     "dest": {
       "root": base.dest,
       "css": path.join(base.dest, dirs.css),
-      "scripts": path.join(base.dest, dirs.scripts),
-      "sass": path.join(base.src, dirs.sass),
-
-      "html": path.join(base.dest)
+      "fonts": path.join(base.dest, dirs.fonts),
+      "html": path.join(base.dest),
+      "scripts": path.join(base.dest, dirs.scripts)
     },
     "src": {
       "root": base.src,
-      "sass": path.join(base.src, dirs.sass),
-      "scripts": path.join(base.src, dirs.scripts),
-      "sass": path.join(base.src, dirs.sass),
-
+      "fonts": path.join(base.src, dirs.fonts),
       "jekyll": path.join(base.src, dirs.jekyll),
+      "sass": path.join(base.src, dirs.sass),
+      "scripts": path.join(base.src, dirs.scripts)
     },
     "tasks": path.join(dirs.tasks)
   };
