@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign events_by_day = site.data.contentful.spaces.mrm.event | sort: 'date' | group_by_exp:"event", "event.date | date: '%A'" %}
+{% assign events_by_day = site.data.contentful.spaces.mrm.event | sort: 'date' | group_by_exp: "event", "event.date | date: '%A'" %}
 
 {% for events_day in events_by_day %}
   <h1 class="c-heading c-heading--h3 c-event__day">{{ events_day.name }}</h1>

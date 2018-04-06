@@ -38,6 +38,9 @@
   </ul>
 
   {{ content }}
+  <script>
+    var adverts = {{ site.data.contentful.spaces.mrm.advert | jsonify }};
+  </script>
   <script src="/scripts/main.js"></script>
 </body>
 </html>

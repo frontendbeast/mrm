@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="o-grid">
+<div class="o-grid" id="advert">
   {% for item in site.data.contentful.spaces.mrm.settings[0].home_grid %}
     <div{% if forloop.first %} class="o-grid__feature"{% endif %}>
       <a href="{{ item.title | datapage_url: '' }}" class="c-image-aspect">
@@ -16,4 +16,5 @@ layout: default
       </a>
     </div>
   {% endfor %}
+  <div class="o-grid__feature" id="advert-poster"></div>
 </div>
