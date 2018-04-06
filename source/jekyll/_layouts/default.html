@@ -19,7 +19,9 @@
     {% if page.back %}
     <div class="c-header__btn">
       <a class="c-nav-btn" href="{{ page.back }}">
-        <span class="c-nav-btn__chevron"></span>
+        <div class="c-nav-btn__inner">
+          <span class="c-nav-btn__chevron"></span>
+        </div>
       </a>
     </div>
     {% else %}
@@ -30,7 +32,7 @@
     </a>
     <div class="c-header__btn">
       <button class="c-nav-btn" id="nav-btn">
-        <div class="c-nav-btn__hamburger">
+        <div class="c-nav-btn__inner">
           <span class="c-nav-btn__lines"></span>
         </div>
       </button>

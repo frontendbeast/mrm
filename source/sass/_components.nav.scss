@@ -49,13 +49,14 @@
     border-width: 2px 2px 0 0;
     display: inline-block;
     height: 12px;
-    left: 6px;
+    left: 50%;
     position: relative;
-    transform: rotate(-135deg);
+    top: -8px;
+    transform: rotate(-135deg) translateY(-50%);
     width: 12px;
   }
 
-  .c-nav-btn__hamburger {
+  .c-nav-btn__inner {
     height: get-size(nav-btn-height);
     position: relative;
     width: get-size(nav-btn-width);
