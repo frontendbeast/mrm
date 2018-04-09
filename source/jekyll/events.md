@@ -9,7 +9,7 @@ layout: default
   {% for event in events_day.items %}
   <div class="o-grid__feature">
     <a href="{{ event.name | datapage_url: 'events' }}" class="c-image-aspect c-image-aspect--event-listing">
-      <div class="c-image-aspect__content c-image-aspect__content--bottom{% if event.image_listing.url == nil %} c-image-aspect__content--no-bg {% endif %}" style="background-image: url({{ event.image_listing.url | cf_image_url: width }})">
+      <div class="c-image-aspect__content c-image-aspect__content--bottom{% if event.image_listing.url == nil %} c-image-aspect__content--no-bg {% endif %}" style="background-image: url({{ event.image_listing.url | cf_image_url: 900 }})">
         <div class="c-image-aspect__overlay"></div>
         <div class="c-image-aspect__overlay-content">
           <div class="c-event__tape">
