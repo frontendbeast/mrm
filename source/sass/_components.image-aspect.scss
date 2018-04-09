@@ -27,6 +27,7 @@
   .c-image-aspect__content {
     background-color: get-color(image-aspect-bg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     height: 100%;
