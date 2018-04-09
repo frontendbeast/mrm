@@ -20,7 +20,7 @@
   <script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');</script>
 </head>
 
-<body>
+<body{% if page.has_flex %} class="has-flex"{% endif %}>
   <header class="c-header">
     {% if page.back %}
     <div class="c-header__btn">
@@ -52,12 +52,12 @@
     {% endfor %}
     </ul>
   </div>
-  <div class="o-wrapper--page">
+  <div class="o-wrapper--page{% if page.has_flex %} o-wrapper--flex{% endif %}">
     {{ content }}
   </div>
   <script>
     var adverts = {{ site.data.contentful.spaces.mrm.advert | jsonify }};
   </script>
-  <script src="/scripts/main.js"></script>
+  <script src="/scripts/main.js" inline></script>
 </body>
 </html>

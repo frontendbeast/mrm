@@ -5,3 +5,9 @@
 .o-wrapper--page {
   padding-top: get-size(logo-height) + (get-size(gutter) * 2);
 }
+
+.o-wrapper--flex {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}

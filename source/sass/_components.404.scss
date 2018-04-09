@@ -1,0 +1,40 @@
+.c-404 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url(/images/error-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+  .c-404__heading {
+    margin: 0;
+  }
+
+  .c-404__bottom {
+    align-self: flex-end;
+  }
+
+  .c-404__back {
+    text-decoration: none;
+  }
+
+  .c-404__middle {
+    align-self: center;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .c-404__subheading {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin: 0 0 10px 0;
+  }
+
+  .c-404__text {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .c-404__top {
+    align-self: flex-start;
+  }

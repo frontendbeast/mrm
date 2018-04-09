@@ -6,7 +6,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 destination: ./public
-keep_files: [fonts, scripts, styles]
+keep_files: [fonts, images, scripts, styles]
 source: ./source/jekyll
 
 markdown: kramdown
