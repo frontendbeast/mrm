@@ -1,7 +1,7 @@
 module Jekyll
   module AssetFilter
     def cf_image_url(input, width)
-      "#{input}?fm=jpg&amp;q=50&w=#{width}"
+      "https:#{input}?fm=jpg&amp;fl=progressive&amp;q=50&w=#{width}"
     end
   end
 end

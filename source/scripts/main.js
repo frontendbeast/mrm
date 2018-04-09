@@ -36,7 +36,7 @@ function renderAdvert(advert, type) {
   a.classList.add('c-image-aspect', `c-image-aspect--${type}`);
 
   div.classList.add('c-image-aspect__content');
-  div.style.backgroundImage = `url(${advert.image.url}?fm=jpg&q=50&w=900)`;
+  div.style.backgroundImage = `url(https:${advert.image.url}?fm=jpg&fl=progressive&q=50&w=900)`;
 
   a.appendChild(div);
 
