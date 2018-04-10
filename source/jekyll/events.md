@@ -1,5 +1,6 @@
 ---
 layout: default
+back: "/"
 ---
 
 {% assign events_by_day = site.data.contentful.spaces.mrm.event | sort: 'date' | group_by_exp: "event", "event.date | date: '%A'" %}
