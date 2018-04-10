@@ -33,6 +33,7 @@ function renderAdvert(advert, type) {
   var div = document.createElement('div');
 
   a.href = advert.link;
+  a.onclick = () => ga('send', 'event', 'Advert', 'Click', advert.title);
   a.classList.add('c-image-aspect', `c-image-aspect--${type}`);
 
   div.classList.add('c-image-aspect__content');
@@ -60,6 +61,8 @@ if (advertBanner) {
 
         div.classList.add('o-grid__feature');
         div.appendChild(element);
+
+        ga('send', 'event', 'Advert', 'View', advert.title);
 
         advertBanner.insertBefore(div, item.nextSibling);
       }
