@@ -1,0 +1,8 @@
+.o-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  .o-grid__feature {
+    grid-column: span 2;
+  }

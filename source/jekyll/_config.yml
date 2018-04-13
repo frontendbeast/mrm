@@ -1,0 +1,35 @@
+# Site settings
+title: MRM
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+destination: ./public
+keep_files: [fonts, images, scripts, styles]
+source: ./source/jekyll
+
+markdown: kramdown
+
+# Data settings
+contentful:
+  spaces:
+    - mrm:
+        space: ENV_CONTENTFUL_SPACE_ID
+        access_token: ENV_CONTENTFUL_ACCESS_TOKEN
+        base_path: ./source/jekyll
+
+# Contentful page generation settings
+page_gen-dirs: false
+
+page_gen:
+  - data: contentful.spaces.mrm.page
+    template: page
+    name: title
+    dir: './'
+    filter_condition: "!record['app_screen']"
+
+  - data: contentful.spaces.mrm.event
+    template: event
+    name: name
+    dir: events

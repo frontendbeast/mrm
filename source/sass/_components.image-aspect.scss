@@ -1,0 +1,73 @@
+.c-image-aspect {
+  display: block;
+  padding-top: 75%;
+  position: relative;
+}
+
+.c-image-aspect--event-listing {
+  padding-top: 40%;
+}
+
+.c-image-aspect--event {
+  padding-top: 100%;
+}
+
+.c-image-aspect--page {
+  padding-top: 112.5%;
+}
+
+.c-image-aspect--poster {
+  padding-top: 140.25%;
+}
+
+.c-image-aspect--shallow {
+  padding-top: 37.5%;
+}
+
+  .c-image-aspect__content {
+    background-color: get-color(image-aspect-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding: get-size(gutter);
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .c-image-aspect__content--no-bg {
+    box-shadow: inset 0 -0.5px 0 get-color(image-aspect-border);
+  }
+
+  .c-image-aspect__content--bottom {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .c-image-aspect__content--center-bottom {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-image-aspect__content--center-top {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-image-aspect__overlay {
+    background-color: rgba(0,0,0,0.2);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .c-image-aspect__overlay-content {
+    position: relative;
+  }

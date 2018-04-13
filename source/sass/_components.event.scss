@@ -1,0 +1,29 @@
+.c-event__date {
+  margin: 5px 0 1rem 0;
+}
+
+.c-event__day {
+  background-color: get-color(event-list-day);
+  line-height: 0.9;
+  margin: 0;
+  padding: get-size(gutter);
+}
+
+.c-event__icon {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.c-event__location {
+  display: flex;
+  margin-top: get-size(gutter);
+}
+
+.c-event__tape {
+  margin-bottom: 4px;
+}
+
+.c-event__title {
+  line-height: 0.9;
+  margin: 0;
+}

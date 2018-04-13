@@ -1,0 +1,19 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 1.125rem;
+  height: 100%;
+}
+
+body {
+  background-color: get-color(body-bg);
+  color: get-color(body-copy);
+  font-family: 'Zilla Slab', 'Rockwell', 'Lucida Bright', 'Georgia', serif;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+
+  &.has-flex {
+    display: flex;
+  }
+}

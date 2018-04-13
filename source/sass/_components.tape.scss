@@ -1,0 +1,21 @@
+.c-tape {
+  background-color: get-color(tape-bg);
+  color: get-color(tape-copy);
+  display: inline-block;
+  line-height: 0.9;
+  padding: 0.375em 0.35em 0.35em 0.35em;
+}
+
+.c-tape--alt {
+  background-color: get-color(tape-secondary-bg);
+  color: get-color(tape-secondary-copy);
+}
+
+.c-tape--entry {
+  background-color: get-color(tape-entry-bg);
+  color: get-color(tape-entry-copy);
+}
+
+.c-tape--feature {
+  background-color: get-color(tape-feature-bg);
+}
