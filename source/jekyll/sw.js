@@ -1,7 +1,9 @@
 ---
 layout: null
 ---
-{% assign urls_to_cache = "'/','/favicon.ico','/fonts/bebasneue_bold-webfont.woff','/fonts/bebasneue_bold-webfont.woff2','/fonts/zillaslab-lightitalic-webfont.woff','/fonts/zillaslab-lightitalic-webfont.woff2','/fonts/zillaslab-regular-webfont.woff','/fonts/zillaslab-regular-webfont.woff2','/fonts/zillaslab-semibold-webfont.woff','/fonts/zillaslab-semibold-webfont.woff2'" %}
+const staticCacheName = 'mrm-{{ site.time | date: "%Y%m%d%H%M" }}';
+
+{% assign urls_to_cache = "'/','/images/map-full.jpg','/images/pin.png','/favicon.ico','/fonts/bebasneue_bold-webfont.woff','/fonts/bebasneue_bold-webfont.woff2','/fonts/zillaslab-lightitalic-webfont.woff','/fonts/zillaslab-lightitalic-webfont.woff2','/fonts/zillaslab-regular-webfont.woff','/fonts/zillaslab-regular-webfont.woff2','/fonts/zillaslab-semibold-webfont.woff','/fonts/zillaslab-semibold-webfont.woff2'" %}
 
 {%- for item in site.data.contentful.spaces.mrm.settings[0].home_grid -%}
   {% assign width = 450 %}{% if forloop.first %}{% assign width = 900 %}{% endif %}
@@ -27,7 +29,6 @@ layout: null
 
 var urlsToCache = [{{ urls_to_cache | replace: 'amp;','' }},'https:{{ urls_inline_to_cache }}?fm=jpg&fl=progressive&q=50&w=900'];
 
-const staticCacheName = 'mrm-{{ site.time | date: "%Y%m%d%H%M" }}';
 const expectedCaches = [
   staticCacheName
 ];
