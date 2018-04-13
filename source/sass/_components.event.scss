@@ -9,6 +9,16 @@
   padding: get-size(gutter);
 }
 
+.c-event__icon {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.c-event__location {
+  display: flex;
+  margin-top: get-size(gutter);
+}
+
 .c-event__tape {
   margin-bottom: 4px;
 }
