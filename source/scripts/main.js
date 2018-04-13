@@ -52,7 +52,7 @@ if (advertBanner) {
   var gridItems = Array.from(advertBanner.children);
 
   gridItems.forEach((item, index) => {
-    if (index === 0 || index % advertSpacing == 0 && index !== gridItems.length-1) {
+    if (index === 0 || index % advertSpacing == 0 && index !== gridItems.length-2) {
       const advert = getAdvert('banner');
 
       if (advert) {
