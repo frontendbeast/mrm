@@ -1,6 +1,6 @@
 {
   "name": "mrm.group",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "MRM Weekend site",
   "main": "index.js",
   "scripts": {
