@@ -10,7 +10,7 @@ back: "/events.html"
 <div class="o-wrapper c-markdown">
   <h1 class="c-heading c-heading--h1 c-event__title">{{ page.title }}</h1>
   <p class="c-event__date">{{ page.date | date: '%a, %H:%M' }}{% if page.ends %} – {{ page.ends }}{% endif %} @ {{ page.venue.name }}</p>
-  {% if page.entry %}<span class="c-tape c-tape--entry c-heading c-heading--h3">{{ page.entry }}</span>{% endif %}
+  {% if page.entry %}<span class="c-tape c-tape--entry c-heading c-heading--h3">{% if page.entry_prefix %}{{ page.entry_prefix }} {% endif %}{{ page.entry }}</span>{% endif %}
   {% if page.dress_code %}<span class="c-tape c-heading c-heading--h3">{{ page.dress_code }}</span>{% endif %}
   {{ page.details | markdownify }}
   {% if page.venue.location %}
