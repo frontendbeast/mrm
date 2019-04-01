@@ -33,3 +33,5 @@ page_gen:
     template: event
     name: name
     dir: events
+
+timezone: UTC+1
