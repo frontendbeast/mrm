@@ -15,4 +15,4 @@ back: "/"
   {% endif %}
   {{ page.copy | cf_image_filter | markdownify }}
 </div>
-<span id="advert-poster"></span>
+{% if page.show_advert %}<span id="advert-poster"></span>{% endif %}
